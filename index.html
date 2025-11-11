@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Chronómetro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>cronometro</title>
 </head>
-<body>
-    <h1>Chronómetro</h1>
-    <!-- <input type="number" id="inputMinutes" placeholder="Minutos" /> -->
-    <div id="chronometer">
-        <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span> 
-    </div>
-    <div id="controls">
-        <button id="startStopBtn">Iniciar</button>
-        <button id="resetBtn">Reiniciar</button>
 
+<body>
+
+    <h1 id="reloj"></h1>
+    <div class="crono">
+        <button id="onoff_crono"></button>
+        <h1 id="cronometro"></h1>
+        <button id="reset_crono">reset</button>
     </div>
-    <script src="script.js"></script>
+
+    <!-- <button id="onoff_temp"></button>
+    <h1 id="temporizador"></h1>
+    <button id="reset_temp"></button> -->
+
+
+    <script src="js/cronometro.js"></script>
 </body>
+
 </html>

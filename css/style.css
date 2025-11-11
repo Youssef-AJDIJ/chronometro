@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+#reloj {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #dbd6d6;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.crono {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #dbd6d6;
+    background-color: black;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#onoff_crono {
+    background-color: #28a745;
+}
+#reset_crono {
+    background-color: #dc3545;
+}
