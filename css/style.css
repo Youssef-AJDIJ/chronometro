@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     height: 100vh;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -20,7 +21,7 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
 }
-.crono {
+.crono, .temp {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
@@ -41,9 +42,23 @@ button {
     color: white;
     transition: background-color 0.3s ease;
 }
-#onoff_crono {
+#onoff_crono, #onoff_temp {
     background-color: #28a745;
 }
-#reset_crono {
+#reset_crono, #reset_temp {
     background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#temporizador_input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+
 }
