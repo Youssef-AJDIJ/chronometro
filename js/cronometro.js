@@ -162,6 +162,7 @@ class Temporizador {
             }
             this.mostrarHora();
         }, 1000); // 1 segundo
+         temporizadorInput.value = "";
     }
     desactivar() {
         if (!this.activado) return;
@@ -212,7 +213,8 @@ btnTemp.addEventListener('click', () => {
         
         // Lo iniciamos
         temporizadorActual.activar();
-        btnTemp.textContent = "Pause"; // Cambiamos la etiqueta del botón
+        btnTemp.textContent = "Pause";
+        // Cambiamos la etiqueta del botón
         
     } else if (temporizadorActual.activado) {
         // Si el temporizador ya existe y está ACTIVO (Corriendo): Pausar
@@ -233,9 +235,7 @@ btnResetTemp.addEventListener('click', () => {
     if (temporizadorActual) {
         temporizadorActual.reset();
         
-        // 3. Después de resetear, también borramos la referencia al objeto
-        //    para que el próximo click en 'btnTemp' cree una nueva cuenta regresiva 
-        //    basada en el input.
+
         temporizadorActual = null;
         
         btnTemp.textContent = "Start";
